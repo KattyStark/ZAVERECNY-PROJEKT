@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #20211d;
+    background-color: #67c995;
+    font-family: "Eagle Lake", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+main {
+    margin-inline: 20px;
+}
+
+header {
+    background-image: url("../images-project/heart.jpg");
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1 {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #569f59;
+    text-shadow: 2px 2px #1e381fc8;
+}
+
+p,
+ul {
+    font-size: 1.1em;
+    text-align: justify;
+    word-spacing: 5px;
+}
+
+.bold {
+    font-family: cursive;
+}
+
+.subtitle {
+    text-decoration: underline;
+}
+
+.menu__top {
+    margin-inline: auto;
+    list-style: none;
+}
+
+.menu_top {
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4ea4759e;
+    text-align: center;
+}
+
+.top {
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item {
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu__item img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 20%;
+}
+
+.menu__link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__link:hover {
+    color: #346c4e;
+}
+
+.menu__item:hover {
+    transform: scale(1.05);
+}
+
+.eco,
+.brilliant,
+.green,
+.pro,
+.kompost,
+.akva {
+    width: 300px;
+    border-radius: 10%;
+    float: left;
+    margin-right: 50px;
+}
+
+.clearfix {
+    overflow: auto;
+    margin-block: 20px;
+}
+
+.btn-back {
+    background-color: #4ea475;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto;
+    display: block;
+}
+
+.btn-back:hover {
+    background-color: #346d4e;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #4ea475;
+    color: #333;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+@media screen and (min-width:1050px) {
+    header {
+        background-position: center bottom;
+        height: 500px;
+    }
+
+    main {
+        max-width: 1000px;
+        margin-inline: auto;
+    }
+}

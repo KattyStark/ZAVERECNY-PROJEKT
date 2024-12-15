@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{title}}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="menu_top">
+                <ul class="menu__top">
+                    <li class="top">
+                        <a href="/" class="menu__link">Hlavní stránka</a>
+                    </li>
+                    <li class="top">
+                        <a href="/akvamace/" class="menu__link">Aquamace</a>
+                    </li>
+                    <li class="top">
+                        <a href="/kompostovani/" class="menu__link">Kompostovaní</a>
+                    </li>
+                    <li class="top">
+                        <a href="/zelene/" class="menu__link">Zelené pohřbívání</a>
+                    </li>
+                    <li class="top">
+                        <a href="/eco-kapsle/" class="menu__link">Ekologické kapsle</a>
+                    </li>
+                    <li class="top">
+                        <a href="/promesie/" class="menu__link">Promesie</a>
+                    </li>
+                    <li class="top">
+                        <a href="/koraly-a-brilianty/" class="menu__link">Diamanty a korály</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="inside">
+            {{ content | safe }}
+        </main>
+        <button class="btn-back" onclick="goBack()">Zpět</button>
+        <footer>
+            <p>&copy; 2024, Kateryna Kaderka, Czechitas</p>
+        </footer>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </body>
+</html>
